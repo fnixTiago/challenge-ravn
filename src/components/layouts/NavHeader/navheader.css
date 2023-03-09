@@ -1,0 +1,39 @@
+.nav {
+    padding-top: 36px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-icon {
+    padding: 12px;
+}
+
+.nav .nav-icon svg path {
+    fill: var(--Neutral-1);
+}
+
+.nav .nav-icon:hover {
+    border-radius: 8px;
+    border: 1px solid var(--Primary-4);
+}
+
+.nav .nav-icon:hover svg path {
+    fill: var(--Primary-4);
+}
+
+.active-b {
+    border-radius: 8px;
+    border: 1px solid var(--Primary-4);
+}
+
+.active-b svg path {
+    fill: var(--Primary-4) !important;
+}
+
+.btn-add{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

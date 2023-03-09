@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.home-title {
+    color: var(--Neutral-1);
+    padding-bottom: 16px;
+}
+
+.list-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.p-right {
+    gap: 32px;
+}
+.p-rightp:last-child {
+    padding-right: 0px;
+}

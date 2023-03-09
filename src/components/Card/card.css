@@ -1,0 +1,93 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+
+    min-width: auto;
+    max-width: 348px;
+    margin: auto 0;
+    max-height: auto;
+    min-height: 208px;
+
+    /* neutral.4 */
+
+    background: #2C2F33;
+    border-radius: 8px;
+
+}
+
+.card .card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header .title {
+    color: var(--Neutral-1);
+}
+
+.card-header .btn-card {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card .card-task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-task .title {
+    color: var(--Neutral-1);
+}
+
+.card-task .btn-task {
+    display: flex;
+    flex-direction: row;
+    background: rgba(148, 151, 154, 0.1);
+    color: var(--Neutral-1);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-task .yesterday {
+    color: var(--Primary-4) !important;
+}
+
+.hour-icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 9px;
+}
+
+.list-tags {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.list-tags .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+
+    height: 32px;
+
+    border-radius: 4px;
+}
+
+.card-reaction {
+    display: flex;
+    justify-content: space-between
+}
+
+.card-reaction img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
