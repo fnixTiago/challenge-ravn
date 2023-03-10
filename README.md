@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Ravn-challenge
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About challenge Ravn
 
-In the project directory, you can run:
+The challenge is to create a task management application that allows adding and browsing tasks for users, using a provided API with all the necessary information. The goal is to demonstrate skills in writing clean software, clear communication, and following instructions.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Create a .env file
+In the file you add the next line and put your token :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` 
+REACT_APP_API_KEY ="TOKEN"
+ ```
+### Version Node v14.15.4
 
-### `npm test`
+### Install Application
+``` 
+npm install
+ ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run Application
+``` 
+npm start
+ ```
 
-### `npm run build`
+## Views of Page
+### Page Navigation
+![image description](images/navigation.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Page Responsive
+![image description](images/responsive.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Page Search
+![image description](images/search.gif)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Add a new task
+![image description](images/addTask.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Delete task
+![image description](images/deleteTask.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies/libraries used
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **"@apollo/client": "^3.7.10"**
+- **"@testing-library/jest-dom": "^5.16.5"**
+- **"@testing-library/react": "^13.4.0"**
+- **"@testing-library/user-event": "^13.5.0"**
+- **"apollo-boost": "^0.4.9"**
+- **"bootstrap": "^5.2.3"**
+- **"graphql": "^16.6.0"**
+- **"moment": "^2.29.4"**
+- **"multiselect-react-dropdown": "^2.0.25"**
+- **"react": "^18.2.0"**
+- **"react-apollo": "^3.1.5"**
+- **"react-bootstrap": "^2.7.2"**
+- **"react-dom": "^18.2.0"**
+- **"react-router-dom": "^6.8.2"**
+- **"react-scripts": "5.0.1"**
+- **"styled-components": "^5.3.8"**
+- **"web-vitals": "^2.1.4"**
