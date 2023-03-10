@@ -16,24 +16,126 @@
 
 .nav .nav-icon:hover {
     border-radius: 8px;
-    border: 1px solid var(--Primary-4);
+    border: 1px solid var(--Primary-4) !important;
 }
 
 .nav .nav-icon:hover svg path {
-    fill: var(--Primary-4);
+    fill: var(--Primary-4) !important;
 }
 
 .active-b {
     border-radius: 8px;
-    border: 1px solid var(--Primary-4);
+    border: 1px solid var(--Primary-4) !important;
 }
 
 .active-b svg path {
     fill: var(--Primary-4) !important;
 }
 
-.btn-add{
+.btn-add {
     background: transparent;
     border: none;
     cursor: pointer;
+}
+
+/*  modal */
+.modal-task .modal-content {
+    background: var(--Neutral-3);
+    padding: 16px;
+}
+
+.modal-task .modal-task-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal-task input {
+    width: 100%;
+    background-color: var(--Neutral-3);
+    border: none;
+    color: var(--Neutral-1)
+}
+
+.modal-task input:focus {
+    outline: none;
+}
+
+.modal-task .modal-task-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+    gap: 8px!important;
+}
+
+.modal-task-body .modal-task-btn {
+    align-items: center;
+    display: flex;
+}
+
+.modal-task-btn .dropdown-toggle {
+    border: none;
+    background: rgba(148, 151, 154, 0.1) !important;
+    color: #fff;
+    border-radius: 4px;
+
+}
+
+.modal-task-btn .dropdown-toggle::after {
+    content: none !important;
+
+}
+
+.modal-task-btn .dropdown-menu {
+    background: var(--Neutral-3) !important;
+    border-color: var(--Neutral-2) !important;
+}
+
+.modal-task-btn .dropdown-menu .dropdown-item {
+    color: #fff !important;
+}
+.modal-task-btn .dropdown-menu .dropdown-item:hover {
+background: var(--Neutral-2) !important;
+}
+.modal-task-btn .dropdown-menu .menu-title {
+    color: var(--Neutral-2) !important;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+}
+
+.modal-task .modal-task-footer {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.item-avatar{
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
+}
+.my-btn {
+    color: #fff;
+    height: 40px;
+    /* primary.2 */
+    /* padding: 8px; */
+    background: transparent;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.btn-primary:is(.active) {
+    background: var(--Primary-4) !important;
+    border-color: var(--Primary-4) !important;
+}
+
+.btn-primary:not(.active) {
+    background: var(--Primary-2);
+    border-color: var(--Primary-2);
+}
+
+.btn-secondary {
+    border-color: #fff;
+    border: none;
 }

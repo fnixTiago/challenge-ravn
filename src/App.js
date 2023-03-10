@@ -6,24 +6,45 @@ import { Routes, Route } from 'react-router-dom';
 // views
 import Home from "./views/Home/Home.js"
 import Task from "./views/Task/Task.js"
-import {useQuery} from "@apollo/client"
+import { useQuery } from "@apollo/client"
 // queryes
-import { GET_USERS } from "./graphql/getUsers.js";
+import { GET_STATUS_TASK } from "./graphql/getStatusTask";
+import { GET_PROFILE } from "./graphql/getProfile";
 // styles
 import "./App.css"
-
+const stimate = [
+  {
+    name: "EIGHT",
+    value: 8
+  },
+  {
+    name: "FOUR",
+    value: 4
+  },
+  {
+    name: "ONE",
+    value: 1
+  },
+  {
+    name: "TWO",
+    value: 2
+  },
+  {
+    name: "ZERO",
+    value: 0
+  },
+]
 function App() {
-  const { data, error, loading } = useQuery(GET_USERS);
-  // console.log("data", data)
-  // console.log("error", error)
-  // console.log("loading", loading)
+  const status = useQuery(GET_STATUS_TASK);
+  const profile = useQuery(GET_PROFILE);
+  // console.log("status", status)
   return (
     <div className="App">
 
       <Sidebar />
       <Content>
-        <Search />
-        <NavHeader />
+        <Search profile={profile} />
+        <NavHeader statusTask={status} stimate = {stimate} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/task" element={<Task />} />

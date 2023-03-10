@@ -25,7 +25,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--Neutral-5);
+  background-color: var(--Neutral-5) !important;
 }
 
 code {
@@ -89,7 +89,7 @@ code {
   background: rgba(148, 151, 154, 0.1);
   color: var(--Neutral-1);
 }
-.solid-label-green {
+.solid-label-ios {
   background: rgba(112, 178, 82, 0.1);
   color: var(--Secondary-4);
 }
@@ -99,7 +99,7 @@ code {
   color: var(--Blue);
 }
 
-.solid-label-yellow {
+.solid-label-android {
   background: rgba(229, 180, 84, 0.1);
   color: var(--Tertiary-4);
 }

@@ -1,11 +1,27 @@
 import React, { useState } from 'react'
 import searchIcon from "../../assets/img/searchIcon.svg"
-import closeIcon from "../../assets/img/closeIcon.svg"
-import notificationIcon from "../../assets/img/notificationIcon.svg"
-
+import { ReactComponent as CloseIcon } from "../../assets/img/closeIcon.svg"
+import { ReactComponent as NotificationIcon } from "../../assets/img/notificationIcon.svg"
+import NoProfile from "../../assets/img/no-profile.svg"
+// styles
 import "./search.css"
-const Search = () => {
+const Search = ({ profile }) => {
+  let { data, loading, error } = profile
   const [text, setText] = useState("")
+
+  const showProfile = () => {
+    if (loading) return (<>Loading...</>)
+    if (error) return <p>error... {error.message}</p>;
+    return (
+      <>
+        <img
+          src={
+            data.profile.avatar ? (data.profile.avatar)
+              : (NoProfile)} alt={data.profile.fullName} className="img-profile" />
+      </>
+    )
+  }
+
   return (
     <div className="search">
       <img src={searchIcon} className="iconSearch" alt="iconSearch" />
@@ -17,13 +33,15 @@ const Search = () => {
       {
         text.length > 0 ? (
           <button className="close" onClick={() => setText("")}>
-            <img src={closeIcon} alt="closeIcon" />
+            <CloseIcon className="close-icon" />
           </button>
         ) : (null)
       }
-      <button className="notification">
-        <img src={notificationIcon} alt="notificationIcon" />
+      <button className="notification-icon">
+        <NotificationIcon />
+        {/* <img src={notificationIcon} alt="notificationIcon" /> */}
       </button>
+      {showProfile()}
     </div>
   )
 }

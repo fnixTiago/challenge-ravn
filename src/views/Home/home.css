@@ -4,14 +4,14 @@
     gap: 32px;
 }
 
-.row {
+.my-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.column {
+.my-column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;

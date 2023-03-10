@@ -5,30 +5,30 @@
     padding: 16px;
     gap: 16px;
 
+    max-width: 548px;
     min-width: auto;
-    max-width: 348px;
     margin: auto 0;
     max-height: auto;
     min-height: 208px;
 
     /* neutral.4 */
 
-    background: #2C2F33;
+    background: var(--Neutral-4) !important;
     border-radius: 8px;
 
 }
 
-.card .card-header {
+.card .my-card-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.card-header .title {
-    color: var(--Neutral-1);
+.my-card-header .title {
+    color: var(--Neutral-1) !important;
 }
 
-.card-header .btn-card {
+.my-card-header .btn-card {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -41,25 +41,39 @@
 }
 
 .card-task .title {
-    color: var(--Neutral-1);
+    color: var(--Neutral-1) !important;
 }
 
 .card-task .btn-task {
     display: flex;
     flex-direction: row;
     background: rgba(148, 151, 154, 0.1);
-    color: var(--Neutral-1);
+    color: var(--Neutral-1) !important;
     border: none;
     cursor: pointer;
 }
 
-.btn-task .yesterday {
-    color: var(--Primary-4) !important;
+.onTime {
+    color: var(--Neutral-1);
 }
 
+.less {
+    color: var(--Tertiary-4);
+    background: rgba(229, 180, 84, 0.1);
+    filter: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(4927%) hue-rotate(323deg) brightness(92%) contrast(94%);
+}
+
+.late {
+    color: var(--Primary-4);
+    background: rgba(218, 88, 75, 0.1);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(57%) saturate(2864%) hue-rotate(330deg) brightness(91%) contrast(87%);
+}
+
+
+
 .hour-icon {
-    width: 20px;
-    height: 20px;
+    /* width: 20px;
+    height: 20px; */
     padding-right: 9px;
 }
 
